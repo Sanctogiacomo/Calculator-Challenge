@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css"  />
+    <title>CJAY | CALCULATOR</title>
+</head>
+<body>
+    <main class="container">
+        <div class="calculator-container">
+            <form class="result" name="result">
+                <div class="history">
+                    <p id="history-value"></p>
+                </div>
+         
+            <div class="output">
+                <input  name="outputvalue" id="output-value">
+                <!-- <p id="output-value" name="outputvalue"></p> -->
+            </div>
+        </form>
+            <div class="keyboard">
+                <left>
+                    <table>
+                        <!-- FIRST ROW OF OUR inputS -->
+                        <tr>
+                            <td><input class="operator" id="clear" value = "C" type="button" onclick="result.outputvalue.value=' ' "/></td>
+                            <td> <input class="operator" id="backspace" value = "CE" type="button" onclick="backspace()"/></td>
+                            <td><input class="operator" id="%" value="%" type="button" onclick="insert('%')"></td>
+                            <td><input class="operator" id="/" value="/" type="button" onclick="insert('/')"></td>   
+                        </tr> 
+        
+                            <!-- SECOND ROW OF OUR inputS -->
+                        <tr>
+                        <td><input class="number" id="7" value="7"  type="button" onclick="insert('7')"></td> 
+                        <td><input class="number" id="8" value="8" type="button" onclick="insert('8')"></td>
+                        <td><input class="number" id="9" value="9" type="button" onclick="insert('9')"></td>
+                        <td><input class="operator" id="*" value="x" type="button" onclick="insert('*')"></td>   
+                        </tr>
+                            
+        
+                            <!-- THIRD ROW OF OUR inputS -->
+                        <tr>
+                        <td><input class="number" id="4" value="4" type="button" onclick="insert('4')"></td>
+                        <td><input class="number" id="5" value = "5" type="button" onclick="insert('5')"></td> 
+                        <td><input class="number" id="6" value="6" type="button" onclick="insert('6')"></td>
+                        <td><input class="operator" id="-" value="-" type="button" onclick="insert('-')"></td>
+                        </tr>
+                        
+        
+                            <!-- FOURTH ROW OF OUR inputS -->
+                        <tr>
+                            <td><input class="number" id="1" value="1" type="button" onclick="insert('1')"></td>
+                            <td><input class="number" id="2" value = "2" type="button" onclick="insert('2')" ></td> 
+                            <td><input class="number" id="3" value="3" type="button" onclick="insert('3')"></td>
+                            <td><input class="operator" id="+" value="+"type="button" onclick="insert('+')"></td>
+                        </tr>
+                        
+        
+                            <!-- FIFTH ROW OF OUR inputS -->
+                        <tr>
+                        <td><input class="empty" id="empty" value=""  type="button"></td>
+                        <td><input class="number" id="0" value="0" type="button" onclick="insert('0')"></td>
+                        <td><input class="empty" id="empty" value="" type="button"></td>
+                        <td> <input class="operator" id="=" value="=" type="button" onclick="result.outputvalue.value = eval(result.outputvalue.value)"></td>
+                        </tr>
+        
+                        </table>
+                </left>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
