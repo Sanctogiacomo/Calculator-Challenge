@@ -32,7 +32,7 @@ Users should be able to:
 
 
 ### Links
-- Live Site URL: [CLICK TO VIEW THE LIVE SITE ON NETLIFY](https://your-live-site-url.com)
+- Live Site URL: [CLICK TO VIEW THE LIVE SITE ON NETLIFY](https://magical-calculator.netlify.app/)
 
 
 ## Author
